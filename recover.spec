@@ -9,7 +9,7 @@ Group(de):	Applikationen/System
 Group(pl):	Aplikacje/System
 Source0:	http://www.linuxave.net/~recover/download/%{name}-%{version}.tar.gz
 URL:		http://www.linuxave.net/~recover/
-BuildRequires:	e2fsprogs >= 1.19
+Requires:	e2fsprogs >= 1.19
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
