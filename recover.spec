@@ -5,8 +5,6 @@ Version:	1.3
 Release:	1
 License:	GPL
 Group:		Applications/System
-Group(de):	Applikationen/System
-Group(pl):	Aplikacje/System
 Source0:	http://recover.sourceforge.net/linux/recover/download/%{name}-%{version}.tar.gz
 URL:		http://recover.sourceforge.net/linux/recover/
 Requires:	e2fsprogs >= 1.19
