@@ -32,14 +32,13 @@ install recover $RPM_BUILD_ROOT%{_sbindir}
 install *.1* $RPM_BUILD_ROOT%{_mandir}/man1
 install recover_questions $RPM_BUILD_ROOT%{_datadir}/%{name}
 
-gzip -9nf README CHANGES
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README CHANGES
 %attr(755,root,root) %{_sbindir}/*
 %{_datadir}/%{name}
 %{_mandir}/man*/*
