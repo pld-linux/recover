@@ -7,8 +7,8 @@ License:	GPL
 Group:		Applications/System
 Group(de):	Applikationen/System
 Group(pl):	Aplikacje/System
-Source0:	http://www.linuxave.net/~recover/download/%{name}-%{version}.tar.gz
-URL:		http://www.linuxave.net/~recover/
+Source0:	http://recover.sourceforge.net/linux/recover/download/%{name}-%{version}.tar.gz
+URL:		http://recover.sourceforge.net/linux/recover/
 Requires:	e2fsprogs >= 1.19
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
