@@ -24,7 +24,7 @@ straconego pliku opisany w dokumencie Ext2fs-Undeletion howto.
 %setup -q
 
 %build
-%{__make} CFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS} -x c"
+%{__make} CFLAGS="%{rpmcflags} -x c"
 
 %install
 rm -rf $RPM_BUILD_ROOT
