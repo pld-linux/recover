@@ -9,7 +9,7 @@ Group(de):	Applikationen/System
 Group(pl):	Aplikacje/System
 Source0:	http://www.linuxave.net/~recover/download/%{name}-%{version}.tar.gz
 URL:		http://www.linuxave.net/~recover/
-Requires:	e2fsprogs >= 1.19
+BuildRequires:	e2fsprogs >= 1.19
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,13 +28,11 @@ straconego pliku opisany w dokumencie Ext2fs-Undeletion howto.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d			$RPM_BUILD_ROOT%{_sbindir}
-install -d			$RPM_BUILD_ROOT%{_mandir}/man1
-install -d			$RPM_BUILD_ROOT%{_datadir}/%{name}
+install -d $RPM_BUILD_ROOT{%{_sbindir},%{_mandir}/man1,%{_datadir}/%{name}}
 
-install recover			$RPM_BUILD_ROOT%{_sbindir}
-install *.1*			$RPM_BUILD_ROOT%{_mandir}/man1
-install recover_questions	$RPM_BUILD_ROOT%{_datadir}/%{name}
+install recover $RPM_BUILD_ROOT%{_sbindir}
+install *.1* $RPM_BUILD_ROOT%{_mandir}/man1
+install recover_questions $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 gzip -9nf README CHANGES
 
