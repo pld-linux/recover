@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://recover.sourceforge.net/linux/recover/download/%{name}-%{version}.tar.gz
+# Source0-md5:	34112eaeec1f60cec6cd296e1bafe311
 URL:		http://recover.sourceforge.net/linux/recover/
 Requires:	e2fsprogs >= 1.19
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
