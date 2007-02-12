@@ -1,5 +1,5 @@
 Summary:	recover lost file from ext2 partition
-Summary(pl.UTF-8):   program do odzyskiwania plików z ext2
+Summary(pl.UTF-8):	program do odzyskiwania plików z ext2
 Name:		recover
 Version:	1.3c
 Release:	1
