@@ -1,5 +1,5 @@
 Summary:	recover lost file from ext2 partition
-Summary(pl):	program do odzyskiwania plików z ext2
+Summary(pl.UTF-8):   program do odzyskiwania plikÃ³w z ext2
 Name:		recover
 Version:	1.3c
 Release:	1
@@ -15,8 +15,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Recover is a utility which automates some steps as described in the
 Ext2fs-Undeletion howto in order to recover a lost file.
 
-%description -l pl
-Recover jest narzêdziem, które automatyzuje proces odzyskiwania
+%description -l pl.UTF-8
+Recover jest narzÄ™dziem, ktÃ³re automatyzuje proces odzyskiwania
 straconego pliku opisany w dokumencie Ext2fs-Undeletion howto.
 
 %prep
